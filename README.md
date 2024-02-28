@@ -46,3 +46,45 @@ Subtree - Descendants of a node
 * General Trees
 * Binary trees
 * Binary search trees
+
+* General Trees
+These are unordered tree data structures where the root node has a minimum 0 or maximum n subtrees.
+Note **The root node acts as the superset of all other subtrees**
+
+* Binary trees
+THese are general trees whereby the root node can hold a maximum of 2 subtrees. Left and Right subtree. There are 3 types
+
+1. Full binary tree - binary tree structure whereby each node has a either 0 or 2 child nodes
+2. Complete binary tree - is a binary tree where **every leaf node is on the same level**. Also, the root node and internal nodes can have 0, 1 or 2 child nodes
+3. Perfect binary tree - is a binary tree where all the leaf nodes are on the same level ad every node except the leaf node have 2 children.
+
+## Binary Search Trees
+
+BST possess all the properties of BT and additional properties of thier own making them more efficient than binary trees.
+Note: **The data in the BST are always stored in such a way that the value in the left subtree is always less than val in the root node, and the value in the right subtree is always greater than the root node value. ie left subtree < root node <= right subtree**
+
+## Advantages of BST
+
+* Better off than binary trees because time complexity of performing ops reduces
+* Since the order of keys in based on parent node, seaching operation is easy
+* The alignment of BST also favors Range Queries, which are executed to find values existing between two keys.
+
+## Disadvantage of BST
+
+If all elements of the nodes are greater than or less than the root node, the tree becomes skewed(completely slanted to one side)
+Note: Skewness makes the tree a linked list rather than a BST as time complexity is O(n).
+THis can be resolved with the conceppt of **Balanced Binary Search Tree**
+
+## Balanced Binary Search Tree
+
+If the height of the left subtree is "m" and the height of the right subtree is "n", then if the value (m - n) equals 0,1 0r -1 then it is a balanced binary search tree.
+The trees are designed in a way they self-balance themselves. Trees use rotation as self-balancing algorithm. There are 4 types namely. Left left, Right right, left right and right left
+
+Types of self-balancing trees include B+ trees, B trees, Red Black trees, Priority search trees, Splay trees & AVL trees
+
+## RESOURCE 3
+
+## Tree Traversal - inorder, preorder and postorder
+
+Transversing a node means visiting all the node in a tree. For instance you might want to add all the values in a tree or find the largest node value in a tree. For either of these operations, we will have to transverse through the tree.
+Note: Linear data structures eg linked lists, arrays, stacks and queues have a single way to read data. But a hierarchical data structure(tree) has various ways
